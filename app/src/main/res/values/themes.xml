@@ -3,6 +3,7 @@
     <style name="Base.Theme.Weather" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimaryDark">@color/backgroung_color</item>
     </style>
 
     <style name="Theme.Weather" parent="Base.Theme.Weather" />

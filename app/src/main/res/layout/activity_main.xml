@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroung_color"
-    tools:context=".MainActivity">
+    tools:context=".activittis.MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -92,7 +92,6 @@
                             android:layout_width="34dp"
                             android:layout_height="34dp"
                             android:layout_gravity="center"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/rain" />
 
                         <TextView
@@ -125,7 +124,6 @@
                             android:layout_width="34dp"
                             android:layout_height="34dp"
                             android:layout_gravity="center"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/wind" />
 
                         <TextView
@@ -158,7 +156,6 @@
                             android:layout_width="34dp"
                             android:layout_height="34dp"
                             android:layout_gravity="center"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/humidity" />
 
                         <TextView
@@ -185,7 +182,6 @@
                     android:id="@+id/imageView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@tools:sample/avatars"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -220,11 +216,11 @@
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/view1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
-                android:paddingStart="24dp"
-                />
+                android:paddingStart="24dp" />
 
         </LinearLayout>
     </ScrollView>
