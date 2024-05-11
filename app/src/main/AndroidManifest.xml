@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Weather"
         tools:targetApi="31">
+
+        <activity
+            android:name=".activittis.FutureActivity"
+            android:exported="false" />
         <activity
             android:name=".activittis.MainActivity"
             android:exported="true">

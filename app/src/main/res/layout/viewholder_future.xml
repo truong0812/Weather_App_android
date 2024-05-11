@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_future_background"
+    android:layout_margin="8dp"
+    android:elevation="3dp">
+
+    <TextView
+        android:id="@+id/TVDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Sat"
+        android:textColor="@color/text_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/IVPic"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TVDay"
+        app:layout_constraintStart_toEndOf="@+id/TVDay"
+        app:layout_constraintTop_toTopOf="@+id/TVDay"
+        app:srcCompat="@drawable/sunny" />
+
+    <TextView
+        android:id="@+id/TVStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Sunny"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toBottomOf="@+id/IVPic"
+        app:layout_constraintStart_toEndOf="@+id/IVPic"
+        app:layout_constraintTop_toTopOf="@+id/IVPic" />
+
+    <TextView
+        android:id="@+id/TVLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="20"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toBottomOf="@+id/IVPic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/IVPic" />
+
+    <TextView
+        android:id="@+id/TVHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="20"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toBottomOf="@+id/IVPic"
+        app:layout_constraintEnd_toStartOf="@+id/TVLow"
+        app:layout_constraintTop_toTopOf="@+id/IVPic" />
+</androidx.constraintlayout.widget.ConstraintLayout>
