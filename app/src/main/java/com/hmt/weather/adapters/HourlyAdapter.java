@@ -60,7 +60,7 @@ public class HourlyAdapter extends RecyclerView.Adapter<HourlyAdapter.viewholder
         public viewholder(@NonNull View itemView) {
             super(itemView);
             tvHour =itemView.findViewById(R.id.TVHour);
-            tvTemp =itemView.findViewById(R.id.TVTemp);
+            tvTemp =itemView.findViewById(R.id.TVtemp);
             ivPic =itemView.findViewById(R.id.IVPic);
         }
     }

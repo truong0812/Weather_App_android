@@ -30,7 +30,7 @@
             app:srcCompat="@drawable/cloudy_sunny" />
 
         <TextView
-            android:id="@+id/TVTemp"
+            android:id="@+id/TVtemp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"

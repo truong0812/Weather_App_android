@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.hmt.weather"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -37,6 +37,11 @@ dependencies {
     implementation("com.google.android.material:material:1.8.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation ("com.github.bumptech.glide:glide:4.12.0")
+    implementation ("com.android.volley:volley:1.2.1")
+    implementation ("com.google.android.gms:play-services-location:19.0.0")
+    implementation ("com.google.android.libraries.places:places:2.4.0")
+
+
 
 
 }

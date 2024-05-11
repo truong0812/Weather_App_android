@@ -2,10 +2,10 @@ package com.hmt.weather.entity;
 
 public class Hourly {
     private String hour;
-    private int temp;
+    private String temp;
     private String picPath;
 
-    public Hourly(String hour, int temp, String picPath) {
+    public Hourly(String hour, String temp, String picPath) {
         this.hour = hour;
         this.temp = temp;
         this.picPath = picPath;
@@ -19,11 +19,11 @@ public class Hourly {
         this.hour = hour;
     }
 
-    public int getTemp() {
+    public String getTemp() {
         return temp;
     }
 
-    public void setTemp(int temp) {
+    public void setTemp(String temp) {
         this.temp = temp;
     }
 

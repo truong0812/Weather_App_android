@@ -7,9 +7,13 @@
     android:background="@color/backgroung_color"
     tools:context=".activittis.MainActivity">
 
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+
         
         <LinearLayout
             android:layout_width="match_parent"
@@ -17,7 +21,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/TVWeather"
+                android:id="@+id/TVweather"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Mostly Cloudy"
@@ -30,7 +34,7 @@
                 android:id="@+id/ImageView"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/cloudy_sunny"
+                android:src="@drawable/cloudy"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
                 />
@@ -46,7 +50,7 @@
                 android:layout_marginTop="16dp"/>
 
             <TextView
-                android:id="@+id/TVtemperature"
+                android:id="@+id/TVtemp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="27°C"
@@ -60,7 +64,7 @@
                 android:id="@+id/TVmaxmin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="H:27 L:18"
+                android:text="High: 27°C | Low: 18°C"
                 android:textSize="16sp"
                 android:textColor="@color/text_color"
                 android:textAlignment="center"/>
@@ -218,5 +222,30 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <View
+        android:id="@+id/grayOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:alpha="0.9"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/loadingProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        style="?android:attr/progressBarStyleLarge"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:indicatorColor="#59504f"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
